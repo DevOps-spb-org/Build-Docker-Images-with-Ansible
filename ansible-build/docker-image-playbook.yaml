@@ -31,10 +31,10 @@
       service:
         name: nginx
         enabled: yes
-    - name: Clean up Python 3 and Prequisites
+    - name: Clean up Python 3 and Prerequisites
       raw: apt purge python3 rsync -y
 
-- name: Snapshot base image to create newly configured Imafe
+- name: Snapshot base image to create newly configured Image
   hosts: localhost
   tasks:
     - name: Commit Docker image
